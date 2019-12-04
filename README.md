@@ -34,3 +34,21 @@ Use transcripts like this:
 Rscripts duncan.test.aqua.r data1.txt data2.txt ...
 Rscripts duncan.test.aqua.withoutrep.r data1.txt data1.pdf
 ```
+## 2 Get all gene id and their loc and function in Lotus gtf file
+`get_func_in_gtf` is a python script for you to get all the gene ids and their locs and functions from the lotus gtf file`GCF_000365185.1_Chinese_Lotus_1.1_genomic.gtf`.
+### Usage
+```
+python get_func_in_gtf <GCF_000365185.1_Chinese_Lotus_1.1_genomic.gtf> <output_file_name>
+```
+It's output file format is:
+```
+LOC104600515	NW_010729074.1	144306	147149	receptor protein kinase-like protein ZAR1
+LOC104594717	NW_010729074.1	1090747	1178857	uncharacterized LOC104594717, transcript variant X4
+LOC104603444	NW_010729074.1	3471500	3476022	aldose 1-epimerase-like
+LOC104607325	NW_010729074.1	4470407	4471690	probable calcium-binding protein CML25
+LOC104608648	NW_010729074.1	4717595	4720129	putative pentatricopeptide repeat-containing protein At1g09680
+LOC104594711	NW_010729074.1	5222130	5226266	MDIS1-interacting receptor like kinase 2-like
+TRNAD-GUC_2	NW_010729074.1	8604646	8604717	tRNA-Asp
+LOC104592301	NW_010729074.1	9471781	9475961	pentatricopeptide repeat-containing protein At1g60770-like
+LOC104593369	NW_010729074.1	12171307	12184718	two-component response regulator-like PRR95
+```
