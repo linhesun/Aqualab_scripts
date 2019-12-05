@@ -52,3 +52,4 @@ TRNAD-GUC_2	NW_010729074.1	8604646	8604717	tRNA-Asp
 LOC104592301	NW_010729074.1	9471781	9475961	pentatricopeptide repeat-containing protein At1g60770-like
 LOC104593369	NW_010729074.1	12171307	12184718	two-component response regulator-like PRR95
 ```
+## 3 Extract sequence from fasta format sequence
