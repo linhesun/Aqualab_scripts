@@ -53,3 +53,24 @@ LOC104592301	NW_010729074.1	9471781	9475961	pentatricopeptide repeat-containing 
 LOC104593369	NW_010729074.1	12171307	12184718	two-component response regulator-like PRR95
 ```
 ## 3 Extract sequence from fasta format sequence
+`readfa.py` is a script read fasta file and it can extract the sequence with index and range.
+
+### Usage
+```
+python readfa.py -d <database> -i <index> -f <startnum> -t <endnum> -o <outputfile> -l <indexlistoutput>
+-d & --data	Data file in fasta format.
+-i & --index	The index of the sequence you want to extract. If you do not know, you can get the index list with -l & --list.
+-f and -t	The range of the sequence you want to extract. -f must be less than -t. If you ignore this two parameter you will get the full length.
+-o & --out	The output file name. If you ignaore this parameter. The seq you want will be printed on the screen.
+-l & --list	If you want a list of the index of your fasta file, please add this parameter with a filename followed.
+-h & --help	Show this information.
+```
+### plus
+For multiple sequences extraction. You can use the script `get_gene_seq.py`.It depends `readfa.py`.
+First you shoud prepare a sort file with format like this:
+```
+<seqname> <index> <from>  <to>
+LOC104600243	NW_010729075.1	9052416	9058589
+LOC104606401	NW_010729076.1	5694797	5697430
+```
+Then use the scripts: `python ger_gene_seq.py <fasta file name> <sort file name>`
