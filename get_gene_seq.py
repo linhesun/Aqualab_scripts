@@ -1,6 +1,6 @@
 #!usr/bin/python
 import sys
-from readfa4 import Fasta
+from readfa import Fasta
 ag = sys.argv
 
 fasta = Fasta(ag[1])
